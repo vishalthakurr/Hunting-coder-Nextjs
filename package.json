@@ -1,5 +1,5 @@
 {
-  "name": "huntindcoder",
+  "name": "huntingcoder",
   "private": true,
   "scripts": {
     "dev": "next dev",
