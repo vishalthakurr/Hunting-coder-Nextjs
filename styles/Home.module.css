@@ -8,7 +8,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: ; */
   align-items: center;
 }
 
@@ -107,10 +107,26 @@
   height: 1em;
   margin-left: 0.5rem;
 }
+ 
+
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+}
+
+.mainnav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+}
+.mainnav ul li{
+  font-weight: bold;
+  margin: 0 24px;
+  list-style: none;
+  cursor: pointer;
+  
 }
