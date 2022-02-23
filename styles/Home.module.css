@@ -1,10 +1,10 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 0rem;
 }
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 0rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -13,20 +13,13 @@
 }
 
 .footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+ text-align: center;
+ color: white;
+ background-color: rgb(48, 48, 48);
+margin:0;
+padding: 10px 0px ;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
 
 .title a {
   color: #0070f3;
@@ -40,7 +33,7 @@
 }
 
 .title {
-  margin: 0;
+  margin: 1rem 0px;
   line-height: 1.15;
   font-size: 4rem;
 }
@@ -51,7 +44,7 @@
 }
 
 .description {
-  margin: 4rem 0;
+  margin: 2rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
 }
@@ -129,4 +122,12 @@
   list-style: none;
   cursor: pointer;
   
+}
+.myimg{
+  border-radius:10px
+}
+.unline:hover{
+  color: rgb(104, 30, 104);
+  text-decoration: underline;
+  text-underline-offset: 0.8rem;
 }
