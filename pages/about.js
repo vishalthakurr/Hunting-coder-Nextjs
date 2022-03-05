@@ -2,7 +2,21 @@ import React from 'react'
 
 const About  = () => {
   return (
-    <div>this is about page</div>
+
+    <>
+    
+    <style jsx>
+        {`
+        .he{
+         height:100vh;
+         width:100%;
+         color:red;
+         }  
+        ` }
+      </style>
+
+    <div className='he'>this is about page</div>
+    </>
   )
 }
 

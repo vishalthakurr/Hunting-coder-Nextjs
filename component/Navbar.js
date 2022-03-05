@@ -7,7 +7,7 @@ const Navbar = () => {
             <ul>
                 <li className={styles.unline}>  <Link href="/">Home</Link> </li>
                 <li className={styles.unline}>  <Link href="/about">About</Link> </li>
-                <li className={styles.unline}>  <Link href="/blogpost/blog">blog</Link> </li>
+                <li className={styles.unline}>  <Link href="/blog">blog</Link> </li>
                 <li className={styles.unline}>  <Link href="/contact">Contact</Link></li>
             </ul>
         </nav>

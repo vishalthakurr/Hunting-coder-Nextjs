@@ -1,8 +1,23 @@
 import React from 'react'
 
 const Contact = () => {
+
   return (
-    <div>contact page</div>
+    <>
+
+      <style jsx>
+        {`
+        .he{
+         height:100vh;
+         width:100%;
+         color:red;
+         }  
+        ` }
+      </style>
+      <div className='he'>
+        contact page
+      </div>
+    </>
   )
 }
 

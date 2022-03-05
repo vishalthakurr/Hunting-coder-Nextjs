@@ -1,0 +1,23 @@
+
+
+.he {
+    height: 100vh;
+    width: 100%;
+    color: red;
+}
+
+.main {
+    min-height: 100vh;
+    padding: 0rem 0rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width:60%;
+    margin: auto;
+}
+
+.linkblog {
+    cursor: pointer;
+}
