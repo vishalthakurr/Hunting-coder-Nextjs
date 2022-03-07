@@ -1,6 +1,5 @@
 import Head from 'next/head'
 // import Script from 'next/script'
-import Image from 'next/image'
 // import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
@@ -37,7 +36,7 @@ export default function Home() {
           Hunting Coder
 
         </h1>
-        <Image className={styles.myimg} src="/Homecoder.jfif" width={537} height={258} alt="hunting coder" />
+        <img className={styles.myimg} src="/Homecoder.jfif" width={537} height={258} alt="hunting coder" />
 
         <p className={styles.description}>
           A Blog for hunting coders by a hunting Coder

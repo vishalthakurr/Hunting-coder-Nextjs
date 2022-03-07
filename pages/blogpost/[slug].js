@@ -51,11 +51,11 @@ const Slug = ({ blog }) => {
     <div className={style.container} >
       <main className={style.main}>
 
-        <h1>{blog.title}  </h1>
+        <h1>{blog &&  blog.title}  </h1>
         <hr />
         {/* <p>Author : {blog.author}</p> */}
         <div>
-          {blog.Content}
+          {blog &&    blog.Content}
         </div>
       </main>
     </div>
