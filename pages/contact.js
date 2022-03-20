@@ -74,24 +74,24 @@ const Contact = () => {
         <form onSubmit={handlesubmit} method='post' >
           <div className={styles.mb3}>
             <label htmlFor="name" className={styles.formlable}>Enter your Name</label>
-            <input type="text" value={client.name} onChange={handlechange} required className="form-control" id="name" aria-describedby="emailHelp" name='name' />
+            <input type="text" value={client.name} onChange={handlechange} required className={styles.input} id="name" aria-describedby="emailHelp" name='name' />
           </div>
           <div className={styles.mb3}>
             <label htmlFor="phone" className={styles.formlable}>Enter your Phone</label>
-            <input type="number" value={client.phone} onChange={handlechange} required className="form-control" id="phone" aria-describedby="emailHelp" name='phone' />
+            <input type="number" value={client.phone} onChange={handlechange} required className={styles.input} id="phone" aria-describedby="emailHelp" name='phone' />
           </div>
           <div className={styles.mb3}>
             <label htmlFor="email" className={styles.formlable}>Email address</label>
-            <input type="email" value={client.email} onChange={handlechange} required className="form-control" id="email" aria-describedby="emailHelp" name='email' />
-            <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+            <input type="email" value={client.email} onChange={handlechange} required className={styles.input} id="email" aria-describedby="emailHelp" name='email' />
+            <div id="emailHelp" className={styles.formtext}>We'll never share your email with anyone else.</div>
           </div>
 
           <div className={styles.mb3}>
-            <label htmlFor="message" className={styles.formlable}>Enter your Message Here</label><br />
-            <textarea className="form-control" value={client.message} required onChange={handlechange} id="message" rows="3" name='message' placeholder='something write here'></textarea>
+            <label htmlFor="message" className={styles.formlable}>Enter your Message Here</label>
+            <textarea className={[styles.input,styles.textare]} value={client.message} required onChange={handlechange} id="message" rows="3" name='message' placeholder='something write here'></textarea>
           </div>
 
-          <button type="submit" className="btn btn-primary">Submit</button>
+          <button type="submit" className={styles.btn}>Submit</button>
         </form>
 
       </div>

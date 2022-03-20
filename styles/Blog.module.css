@@ -1,9 +1,10 @@
 
 
 .he {
-    height: 100vh;
-    width: 100%;
-    color: red;
+    height :max-content;
+    max-width: 80vw;
+    margin: auto;
+   
 }
 
 .main {
@@ -21,3 +22,11 @@
 .linkblog {
     cursor: pointer;
 }
+.btn{
+    color: white;
+    background: rgb(44, 43, 43);
+    padding: 7px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }

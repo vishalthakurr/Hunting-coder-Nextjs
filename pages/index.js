@@ -7,12 +7,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
 
-      <style jsx>
-        {`
-          h2{font-size:35px;}
-           h3{font-size:28px;}   
-    `}
-      </style>
+
 
       <Head>
         <title>Hunting Coder</title>
@@ -31,26 +26,29 @@ export default function Home() {
 
       <main className={styles.main}>
 
+        <img className={styles.myimg} src="/Homecoder.jfif" width={280} height={258} alt="hunting coder" />
 
         <h1 className={styles.title}>
-          Hunting Coder
+         &lt;Hunting Coder /&gt;
 
         </h1>
-        <img className={styles.myimg} src="/Homecoder.jfif" width={537} height={258} alt="hunting coder" />
 
         <p className={styles.description}>
           A Blog for hunting coders by a hunting Coder
         </p>
 
         <div className="blogs">
-          <h2>Popular Blog</h2>
+          <h2 className={styles.h2}>Popular Blog</h2>
           <div className="blogitem">
-            <h3>How to learn javscript in 2022</h3>
+            <h3 className={styles.h3}>How to learn javscript in 2022</h3>
             <p>Javascript is tha language used to design logic for the web</p>
+            <button className={styles.btn}>Read more</button>
           </div>
           <div className="blogitem">
-            <h3>How to learn javscript in 2022</h3>
+            <h3 className={styles.h3}>How to learn javscript in 2022</h3>
             <p>Javascript is tha language used to design logic for the web</p>
+            <button className={styles.btn}>Read more</button>
+ 
           </div>
 
         </div>

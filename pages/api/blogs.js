@@ -1,10 +1,12 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 import * as fs from 'fs';
-export default  function handler(req, res) {
+export default   function handler(req, res) {
  
  
   let data =  fs.readdirSync("blogdata")
+
+  data = data.slice(0, req.query.count)
   let allblog=[]
 
   data.forEach((item)=>{

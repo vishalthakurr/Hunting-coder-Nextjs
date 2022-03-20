@@ -51,11 +51,11 @@ const Slug = ({ blog }) => {
     <div className={style.container} >
       <main className={style.main}>
 
-        <h1>{blog &&  blog.title}  </h1>
+        <h1>{blog && blog.title}  </h1>
         <hr />
         {/* <p>Author : {blog.author}</p> */}
         <div>
-          {blog &&    blog.Content}
+          {blog && blog.Content}
         </div>
       </main>
     </div>
@@ -64,11 +64,17 @@ const Slug = ({ blog }) => {
 
 
 export async function getStaticPaths() {
+  let allb = await fs.promises.readdir(`blogdata`)
+  allb = allb.map((item) => { return { params: { slug: item.split(".")[0] } } })
+  console.log(allb);
+
   return {
     paths: [
-      { params: { slug: "how_to_learn_javascript" } },
-      { params: { slug: "how_to_learn_nextjs" } },
-      { params: { slug: "how_to_learn_python" }},
+
+      allb
+      // { params: { slug: "how_to_learn_javascript" } },
+      // { params: { slug: "how_to_learn_nextjs" } },
+      // { params: { slug: "how_to_learn_python" } },
 
     ],
     fallback: true // false or 'blocking'
@@ -77,7 +83,7 @@ export async function getStaticPaths() {
 
 
 //---------------------------------------------------- static side props
-export async function getStaticProps({ params: {slug} }) {
+export async function getStaticProps({ params: { slug } }) {
 
   // console.log(context.params);
 
@@ -85,7 +91,7 @@ export async function getStaticProps({ params: {slug} }) {
   // console.log(slug);
 
   let myblog = await fs.promises.readFile(`blogdata/${slug}.json`, 'utf-8')
-   
+
   // console.log(myblog);
   let blog = JSON.parse(myblog)
 

@@ -36,7 +36,7 @@
 .title {
   margin: 1rem 0px;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .title,
@@ -138,12 +138,24 @@
 }
 
 .myimg {
-  border-radius: 10px
+  border-radius: 100%;
+  margin-top: 1rem;
 }
 
 .unline:hover {
   color: rgb(104, 30, 104);
   text-decoration: underline;
   text-underline-offset: 0.8rem;
+}
+
+.h2{font-size:35px;}
+.h3{font-size:28px;}
+.btn{
+  color: white;
+  background: rgb(44, 43, 43);
+  padding: 7px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
